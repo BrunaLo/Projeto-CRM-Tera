@@ -13,7 +13,7 @@ menuItems.forEach(item => {
 })
 
 function scrollToIdOnClick(event) {
-    event.preventDefault();
+    //event.preventDefault();
     //console.log(event)
     const element = event.target;
     //console.log(element)
@@ -22,7 +22,7 @@ function scrollToIdOnClick(event) {
     
 
     window.scroll({
-        top: to -50,
+        top: to -70,
         behavior: "smooth",
     })
 }
