@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-
 :root {
     --main-color: #0fbcf9;
     --secondary-color: #064b64;
@@ -60,21 +59,9 @@ body {
     font-family: "rubik";
 }
 
-/*@media(min-width: 992px) { -deixar a imagem responsiva, - header centralizado em telas menores, -ajustar corpo do site 
-
-
-}*/
-
-/*main {
-    margin: 1em;
-}*/
-
 .icons {
     display: inline-block;
-    margin-bottom: 10%;
-    margin-top: 5%;
     flex-wrap: wrap;
-    margin-left: 10%;
 }
 
 .icons a {
@@ -107,25 +94,70 @@ nav div a {
     padding: 2em;
 }
 
+.image {
+    display: flex;
+}
+
 .image-data {
     width: 900px;
     height: 700px;
-    display: flex;
-    float: right;
-    flex-direction: row-reverse;
-    margin-right: 10em;
-    justify-content: center;
-    margin-top: 3%;
+    object-fit: contain;
+}
 
+.page-top {
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (max-width: 1300px) {
+    .page-top {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .icons {
+        display: inline;       
+    }
+
+}
+
+@media (max-width: 669px) {
+
+    .page-top {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .main-title {
+        padding: 2rem;
+    }
+
+    .icons {
+        display: inline;
+        font-size: 10px;
+    }
+
+    .image-data {
+        width: 400px;
+        height: 300px;
+        object-fit: contain;
+    }
+
+}
+
+main {
+    justify-content: center;
+    display: flex;
+    padding-top: 5em;
 }
 
 .text-article {
     box-shadow: 0px 0px 13px -5px;
     border-radius: 10px;
     padding: 1rem;
+    max-width: 800px;
     margin: 1rem;
-    margin-left: 50%;
-    transform: translateX(-50%);
+
 }
 
 .icon-button {
@@ -135,6 +167,9 @@ nav div a {
     padding: 10px;
     margin-bottom: 2rem;
     margin-top: 2rem;
+}
+
+.icon-button :hover {
     color: #0fbcf9;
 }
 
