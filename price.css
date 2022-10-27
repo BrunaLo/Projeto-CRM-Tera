@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lalezar&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+:root {
+    --main-color: #0fbcf9;
+    --secondary-color: #064b64;
+    --dark-color: #171d1c;
+    --light-gray: #dbdbdb;
+}
+
+header a {
+    color: var(--dark-color) !important;
+}
+
+header a:hover {
+    color: var(--main-color) !important;
+}
+
+header a:visited {
+    color: var(--dark-color);
+}
+
+.main-title {
+    font-family: "Lalezar";
+    font-size: 3rem;
+    color: #171d1c;
+}
+
+header h1 a,
+header h1 a:visited {
+    text-decoration: none;
+    color: var(--dark-color);
+}
+
+.special-btn {
+    border: solid 2px var(--main-color) !important;
+    border-radius: 0.3rem !important;
+    transition: all 0.5s ease;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+}
+
+header a:hover,
+.special-btn:hover {
+    color: var(--main-color);
+}
+
+.special-btn:hover {
+    transform: scale(1.05);
+}
+
+main {
+    padding-top: 10em;
+    padding-bottom: 20em;
+}
+
+.title-cards {
+    color: var(--main-color);
+}
+
+.button-cards {
+    color: var(--main-color);
+}
+
+.cards {
+    height: 15em;
+}
+
+.cards li{
+    font-size: x-large;
+}
+    
+
+.card-title {
+    padding-bottom: 2em;
+}
+
+
+footer {
+    color: #fff;
+}
+
+footer a {
+    color: var(--light-gray) !important;
+}
+
+footer a:hover {
+    color: #fff !important;
+}
+
+@media (max-width: 1200px) {
+
+    .cards li {
+        font-size: medium;
+    }
+}
+
+@media (max-width: 760px) {
+
+    .cards li {
+        font-size: x-large;
+    }
+}
